@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Book - Taniti</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <a href="index.html" class="site-logo">Taniti Island</a>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="accommodations.html">Lodging</a></li>
+                <li><a href="dining.html">Dining</a></li>
+                <li><a href="activities.html">Activities</a></li>
+                <li><a href="transit.html">Transportation</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="book.html" class="book-btn">Book Now</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <h1 class="page-title">Plan Your Trip</h1>
+        
+        <div class="info-card" style="max-width: 600px; margin: 0 auto;">
+            <form action="#">
+                <div style="margin-bottom: 1.5rem;">
+                    <label style="display: block; margin-bottom: 0.5rem; font-weight: bold;">Full Name</label>
+                    <input type="text" style="width: 100%; padding: 0.8rem; border: 1px solid #ccc; border-radius: 4px;" required>
+                </div>
+                
+                <div style="margin-bottom: 1.5rem;">
+                    <label style="display: block; margin-bottom: 0.5rem; font-weight: bold;">Select Lodging</label>
+                    <select style="width: 100%; padding: 0.8rem; border: 1px solid #ccc; border-radius: 4px;">
+                        <option>4-Star Resort</option>
+                        <option>Bed & Breakfast</option>
+                        <option>Hostel</option>
+                    </select>
+                </div>
+
+                <div style="margin-bottom: 1.5rem;">
+                    <label style="display: block; margin-bottom: 0.5rem; font-weight: bold;">Select Activities</label>
+                    <select multiple style="width: 100%; padding: 0.8rem; border: 1px solid #ccc; border-radius: 4px;">
+                        <option>Helicopter Ride</option>
+                        <option>Zip-Lining</option>
+                        <option>Museum Tour</option>
+                        <option>Golf Course</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="action-btn" style="width: 100%; border: none; font-size: 1.1rem; cursor: pointer;">Submit Request</button>
+            </form>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="reference-section">
+            <h4>References</h4>
+            <p>Western Governors University. (n.d.). <em>About the Island</em>. [Course scenario document]. WGU D479 User Experience Design.</p>
+        </div>
+    </footer>
+</body>
+</html>
