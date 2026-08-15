@@ -1,0 +1,166 @@
+/* style.css - Unique Island Theme */
+:root {
+    --primary-teal: #028090;
+    --sand-beige: #F4F1DE;
+    --coral-accent: #E07A5F;
+    --dark-slate: #3D405B;
+    --text-main: #333333;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+body {
+    background-color: var(--sand-beige);
+    color: var(--text-main);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header & Navigation */
+.site-header {
+    background-color: var(--dark-slate);
+    padding: 1.5rem 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.site-logo {
+    color: var(--sand-beige);
+    font-size: 2rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: var(--coral-accent);
+}
+
+.book-btn {
+    background-color: var(--coral-accent);
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+/* Page Content */
+.main-content {
+    flex: 1;
+    width: 90%;
+    max-width: 1100px;
+    margin: 3rem auto;
+}
+
+.page-title {
+    color: var(--primary-teal);
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.intro-text {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 1.1rem;
+    color: var(--dark-slate);
+    line-height: 1.6;
+}
+
+/* Card Grid Layout */
+.info-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.info-card {
+    background: #ffffff;
+    border-top: 5px solid var(--primary-teal);
+    border-radius: 8px;
+    width: 100%;
+    max-width: 320px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+}
+
+.card-image {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+
+.info-card h3 {
+    color: var(--dark-slate);
+    margin-bottom: 0.8rem;
+}
+
+.info-card p {
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.5;
+    flex-grow: 1;
+}
+
+.action-btn {
+    display: block;
+    text-align: center;
+    background-color: var(--primary-teal);
+    color: white;
+    text-decoration: none;
+    padding: 0.6rem;
+    border-radius: 4px;
+    font-weight: bold;
+    margin-top: auto;
+}
+
+.action-btn:hover {
+    background-color: var(--dark-slate);
+}
+
+/* Footer & Citations */
+.site-footer {
+    background-color: var(--dark-slate);
+    color: #ccc;
+    padding: 2rem 5%;
+    margin-top: auto;
+}
+
+.reference-section {
+    border-top: 1px solid #555;
+    padding-top: 1rem;
+    margin-top: 1rem;
+    font-size: 0.85rem;
+    line-height: 1.4;
+}
+
+.reference-section h4 {
+    color: #fff;
+    margin-bottom: 0.5rem;
+}
